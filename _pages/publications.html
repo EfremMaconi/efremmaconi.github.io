@@ -6,13 +6,24 @@ author_profile: true
 ---
 
 {% assign papers = site.publications | sort: 'date' | reverse %}
-{% for paper in papers %}
-  {% if paper.authors %}
+{% assign sections = 'First-author papers|Co-authored papers' | split: '|' %}
+{% for section in sections %}
+<section>
+  <h2>{{ section }}</h2>
+  {% for paper in papers %}
+    {% unless paper.authors %}{% continue %}{% endunless %}
+    {% assign first_author = paper.authors | split: ', ' | first | strip %}
+    {% assign group = 'Co-authored papers' %}
+    {% if first_author == 'E. Maconi' or first_author == 'Efrem Maconi' %}
+      {% assign group = 'First-author papers' %}
+    {% endif %}
+    {% unless section == group %}{% continue %}{% endunless %}
     {% assign journal_url = paper.link | default: paper.paperurl %}
     <article class="publication-entry">
-      <h2><a href="{{ journal_url | escape }}">{{ paper.title | escape }}</a></h2>
+      <h3><a href="{{ journal_url | escape }}">{{ paper.title | escape }}</a></h3>
       <p><small><em>{{ paper.authors | split: ', ' | first | escape }} et al. ({{ paper.date | date: '%Y' }}), {{ paper.venue | escape }}</em></small></p>
       <p>{{ paper.excerpt | strip_html | strip | escape }}</p>
     </article>
-  {% endif %}
+  {% endfor %}
+</section>
 {% endfor %}
