@@ -5,32 +5,14 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+{% assign papers = site.publications | sort: 'date' | reverse %}
+{% for paper in papers %}
+  {% if paper.authors %}
+    {% assign journal_url = paper.link | default: paper.paperurl %}
+    <article>
+      <h2><a href="{{ journal_url | escape }}">{{ paper.title | escape }}</a></h2>
+      <p>{{ paper.authors | escape }}</p>
+      <p>{{ paper.excerpt | strip_html | strip | escape }}</p>
+    </article>
+  {% endif %}
+{% endfor %}
