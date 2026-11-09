@@ -82,27 +82,14 @@
   margin: 0 auto;
 }
 
-#main.centered-article > :is(.page, .archive) {
-  text-align: center;
+#main:not(:has(> .sidebar)) > :is(.page, .archive) {
+  float: none;
+  width: 100%;
+  max-width: 36rem;
+  margin-inline: auto;
+  padding-inline: 0;
 }
 
-@media screen and (min-width: $sidebar-screen-min-width) {
-  #main.centered-article {
-    display: grid;
-    max-width: 80rem;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 36rem) minmax(0, 1fr);
-    gap: clamp(1rem, 2vw, 2rem);
-  }
-
-  #main.centered-article > .sidebar {
-    grid-column: 1;
-    width: 100%;
-    max-width: 13rem;
-    justify-self: end;
-  }
-
-  #main.centered-article > :is(.page, .archive) {
-    grid-column: 2;
-    width: 100%;
-  }
+#main.centered-article > :is(.page, .archive) {
+  text-align: center;
 }
