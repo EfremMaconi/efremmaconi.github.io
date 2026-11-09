@@ -222,6 +222,10 @@
 }
 
 @media screen {
+  html[data-theme="dark"] {
+    --global-bg-color: #101012;
+  }
+
   body {
     isolation: isolate;
   }
@@ -233,6 +237,16 @@
     z-index: -1;
     pointer-events: none;
     background: url("{{ '/image/background_image.jpg' | relative_url }}") center / cover no-repeat;
-    opacity: 0.12;
+    opacity: 0.65;
+    --photo-fade: linear-gradient(to right, black, transparent 24%, transparent 76%, black);
+    -webkit-mask-image: var(--photo-fade);
+    mask-image: var(--photo-fade);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body::before {
+    opacity: 0.22;
+    --photo-fade: linear-gradient(to right, black, transparent 10%, transparent 90%, black);
   }
 }
