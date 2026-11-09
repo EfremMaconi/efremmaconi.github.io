@@ -135,7 +135,6 @@
       display: flex !important; // Keep links visible through the theme's resize handler.
       flex-direction: column;
       align-items: flex-start;
-      gap: 0.25rem;
       position: static;
       margin: 0.5rem 0 0;
       padding: 0;
@@ -152,13 +151,26 @@
       display: block;
     }
 
-    .author__urls a {
-      margin: 0;
-      padding: 0.35rem 0;
-    }
   }
 }
 
 @media (max-width: 767px) {
   #site-nav .visible-links { margin: 0; }
+}
+
+#main.home-profile .author__urls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.125rem;
+
+  li, a {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+  }
+
+  a {
+    font-size: inherit;
+  }
 }
