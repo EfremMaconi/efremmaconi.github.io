@@ -220,3 +220,19 @@
     margin: 0;
   }
 }
+
+@media screen {
+  body {
+    isolation: isolate;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: url("{{ '/image/background_image.jpg' | relative_url }}") center / cover no-repeat;
+    opacity: 0.12;
+  }
+}
