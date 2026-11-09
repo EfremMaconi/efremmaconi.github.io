@@ -55,6 +55,14 @@
   list-style-type: none;
   white-space: nowrap;
 
+  &:not(#theme-toggle) > a {
+    font-size: 1.1rem;
+  }
+
+  &--lg:not(#theme-toggle) > a {
+    font-size: 1.25rem;
+  }
+
   &--lg {
     padding-right: 2em;
     font-weight: 700;
