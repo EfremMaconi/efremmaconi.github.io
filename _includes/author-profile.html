@@ -22,15 +22,12 @@
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
 
-  {% if author.email %}
-    <div class="author__content">
-      {% if author.email %}<p style="overflow-wrap: anywhere;"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i> {{ author.email | escape }}</p>{% endif %}
-    </div>
-  {% endif %}
-
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
+      {% if author.email %}
+        <li style="overflow-wrap: anywhere; white-space: normal;"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i> {{ author.email | escape }}</li>
+      {% endif %}
       <!-- Font Awesome icons / Biographic information  -->
       {% if author.location %}
         <li class="author__desktop"><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>
