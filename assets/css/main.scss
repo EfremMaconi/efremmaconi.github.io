@@ -101,3 +101,61 @@
 #main.centered-article > .archive {
   text-align: left;
 }
+
+@media screen and (max-width: ($sidebar-screen-min-width - 1px)) {
+  #main.home-profile > .sidebar {
+    padding-top: 0 !important; // Navigation JS adds inline padding when Follow is hidden.
+    margin: 0 0 1.5rem;
+    text-align: center;
+
+    div.author__avatar {
+      display: block;
+      width: clamp(112px, 34vw, 152px);
+      margin: 0 auto 0.75rem;
+    }
+
+    .author__content,
+    .author__urls-wrapper {
+      display: block;
+      padding: 0;
+      line-height: 1.45;
+    }
+
+    .author__content p {
+      margin: 0.25rem 0;
+    }
+
+    .author__urls-wrapper button,
+    .author__urls::before,
+    .author__urls::after {
+      display: none;
+    }
+
+    .author__urls {
+      display: flex !important; // Keep links visible through the theme's resize handler.
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0.25rem 0.9rem;
+      position: static;
+      margin: 0.5rem 0 0;
+      padding: 0;
+      background: transparent;
+      border: 0;
+      box-shadow: none;
+    }
+
+    .author__urls li {
+      white-space: normal;
+    }
+
+    .author__desktop {
+      display: block;
+    }
+
+    .author__urls a {
+      margin: 0;
+      padding: 0.35rem 0;
+    }
+  }
+}
