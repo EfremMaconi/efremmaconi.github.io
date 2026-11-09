@@ -110,7 +110,7 @@
 
     div.author__avatar {
       display: block;
-      width: clamp(112px, 34vw, 152px);
+      width: clamp(140px, 41vw, 175px);
       margin: 0 auto 0.75rem;
     }
 
@@ -133,10 +133,9 @@
 
     .author__urls {
       display: flex !important; // Keep links visible through the theme's resize handler.
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      gap: 0.25rem 0.9rem;
+      gap: 0.25rem;
       position: static;
       margin: 0.5rem 0 0;
       padding: 0;
