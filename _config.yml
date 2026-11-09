@@ -24,40 +24,41 @@ repository               : "EfremMaconi/efremmaconi.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  name             : "Efrem Maconi"
+  pronouns         : "he/him"  
+  bio              : #"Short biography for the left-hand sidebar"
+  location         : #"Earth"
+  employer         : "University of Vienna"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "efrem.maconi@univie.ac.at" 
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : #"https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "https://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/0009-0007-4386-7607"
   semantic         : # URL
   ssrn             : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
   scopus           : # URL
   zotero           : # URL
+  SciX             : "https://scixplorer.org/search?fq=%7B%21type%3Daqp+v%3D%24fq_database%7D&fq_database=%28database%3Aastronomy+OR+database%3Aphysics%29&p=1&p_=0&q=author%3A%22maconi%2C+efrem+a%22+year%3A2023-&sort=date+desc&d=astrophysics"
 
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : #"academicpages"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : "efrem97.bsky.social" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
