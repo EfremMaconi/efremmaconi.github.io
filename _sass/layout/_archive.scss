@@ -243,3 +243,17 @@
     }
   }
 }
+
+.publication-entry {
+  display: grid;
+  gap: 0.2rem;
+
+  > h2,
+  > p {
+    margin: 0;
+  }
+
+  + .publication-entry {
+    margin-top: 1.5rem;
+  }
+}

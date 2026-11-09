@@ -9,7 +9,7 @@ author_profile: true
 {% for paper in papers %}
   {% if paper.authors %}
     {% assign journal_url = paper.link | default: paper.paperurl %}
-    <article>
+    <article class="publication-entry">
       <h2><a href="{{ journal_url | escape }}">{{ paper.title | escape }}</a></h2>
       <p><small><em>{{ paper.authors | split: ', ' | first | escape }} et al. ({{ paper.date | date: '%Y' }}), {{ paper.venue | escape }}</em></small></p>
       <p>{{ paper.excerpt | strip_html | strip | escape }}</p>
