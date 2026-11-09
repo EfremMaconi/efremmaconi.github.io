@@ -253,6 +253,15 @@
     margin: 0;
   }
 
+  > h2 {
+    font-size: 1.125em;
+
+    a,
+    a:hover {
+      text-decoration: none;
+    }
+  }
+
   + .publication-entry {
     margin-top: 1.5rem;
   }
