@@ -223,18 +223,40 @@
 
 @media screen {
   :root {
-    --reading-panel-width: calc(min(100vw, 54rem) - 0.75rem);
+    --reading-panel-width: min(62rem, calc(100% - 0.5rem));
   }
 
-  .masthead__inner-wrap {
-    background-size: var(--reading-panel-width) 1px;
+  .masthead__inner-wrap, .page__footer footer { background-image: none; }
+
+  .masthead::after, .page__footer::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: var(--reading-panel-width);
+    height: 1px;
+    background: var(--global-border-color);
+  }
+
+  .masthead::after { bottom: 0; }
+  .page__footer::before { top: 0; }
+
+  .site-content-scroll {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    padding-bottom: 2rem;
   }
 
   body {
     isolation: isolate;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100vh;
+    height: 100dvh;
+    box-sizing: border-box;
+    overflow: hidden;
     padding-bottom: 0;
   }
 
@@ -242,8 +264,9 @@
 
   .page__footer {
     position: relative;
-    margin-top: auto;
-    padding-top: 3em;
+    flex: 0 0 auto;
+    margin: 0;
+    padding-top: 0;
     background: transparent;
     color: var(--global-text-color);
   }
@@ -257,8 +280,7 @@
     z-index: -1;
     pointer-events: none;
     background:
-      linear-gradient(to right, transparent, rgba(0, 0, 0, 0.8) 18px,
-        rgba(0, 0, 0, 0.8) calc(100% - 18px), transparent)
+      linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8))
         center / var(--reading-panel-width) 100% no-repeat,
       url("{{ '/image/background_2.jpg' | relative_url }}") center / cover no-repeat;
   }
