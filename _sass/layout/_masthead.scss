@@ -15,19 +15,14 @@
           animation-delay: 0.15s;
   z-index: 20;
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    height: 1px;
-    background: var(--global-border-color);
-    width: 100%;
-  }
-
   &__inner-wrap {
     @include container;
     @include clearfix;
     padding: 0.5em 1em;
+    background-image: linear-gradient(var(--global-border-color), var(--global-border-color));
+    background-size: calc(100% - 2em) 1px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
     font-family: $sans-serif-narrow;
 
     @include breakpoint($x-large) {
