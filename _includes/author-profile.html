@@ -22,7 +22,7 @@
 
   {% if author.email or author.scix %}
     <div class="author__content">
-      {% if author.email %}<p style="overflow-wrap: anywhere;">{{ author.email | escape }}</p>{% endif %}
+      {% if author.email %}<p style="overflow-wrap: anywhere;"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i> {{ author.email | escape }}</p>{% endif %}
       {% if author.scix %}<p><a href="{{ author.scix | escape }}"><i class="ai ai-ads ai-fw icon-pad-right" aria-hidden="true"></i>SciX</a></p>{% endif %}
     </div>
   {% endif %}
