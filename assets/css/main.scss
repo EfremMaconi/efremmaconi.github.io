@@ -93,6 +93,11 @@
   padding-inline: 0;
 }
 
-#main.centered-article > :is(.page, .archive) {
-  text-align: center;
+#main.centered-article > .page .page__content p {
+  text-align: justify;
+  hyphens: auto;
+}
+
+#main.centered-article > .archive {
+  text-align: left;
 }
