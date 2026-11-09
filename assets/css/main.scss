@@ -36,3 +36,41 @@
     "layout/archive",
     "layout/sidebar"
 ;
+
+.sidebar .author__name {
+  font-size: 1.35rem;
+}
+
+#main.home-profile {
+  max-width: 54rem;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: $sidebar-screen-min-width) {
+  #main.home-profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+  #main.home-profile::before,
+  #main.home-profile::after {
+    display: none;
+  }
+
+  .home-profile > .sidebar {
+    position: static;
+    flex: 0 0 13rem;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+  }
+
+  .home-profile > .page {
+    flex: 1;
+    min-width: 0;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
