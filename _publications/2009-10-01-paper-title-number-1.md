@@ -1,5 +1,5 @@
 ---
-title: "Modelling Local Bubble analogs: Synthetic dust polarization maps"
+title: "Modelling Local Bubble analogs: synthetic dust polarization maps"
 collection: publications
 category: manuscripts
 permalink: /publication/2023-local-bubble-dust-polarization
