@@ -37,10 +37,6 @@
     "layout/sidebar"
 ;
 
-.sidebar .author__name {
-  font-size: 1.35rem;
-}
-
 .masthead__inner-wrap,
 .page__footer footer,
 #main:has(> .sidebar) {
@@ -58,6 +54,12 @@
   #main:has(> .sidebar)::before,
   #main:has(> .sidebar)::after {
     display: none;
+  }
+
+  /* The navigation script adds inline top padding for the fixed sidebar. */
+  #main.home-profile > .sidebar {
+    padding-top: 0 !important;
+    margin-top: 0;
   }
 
   #main > .sidebar {
