@@ -7,7 +7,10 @@
 <div itemscope itemtype="http://schema.org/Person">
 
   <div class="author__avatar">
-    {% if author.avatar contains "://" %}
+    {% assign avatar_prefix = author.avatar | slice: 0, 1 %}
+    {% if avatar_prefix == "/" %}
+      <img src="{{ author.avatar | relative_url }}" class="author__avatar" alt="{{ author.name | escape }}" fetchpriority="high" />
+    {% elsif author.avatar contains "://" %}
     	<img src="{{ author.avatar }}" alt="{{ author.name }}"  fetchpriority="high" />
     {% else %}
     	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}"  fetchpriority="high" />

@@ -23,7 +23,7 @@ repository               : "EfremMaconi/efremmaconi.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "/image/profile_pic.jpg"
   name             : "Efrem Maconi"
   pronouns         : "he/him"  
   bio              : #"Short biography for the left-hand sidebar"
