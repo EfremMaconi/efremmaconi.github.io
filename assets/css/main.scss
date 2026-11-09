@@ -41,24 +41,29 @@
   font-size: 1.35rem;
 }
 
-#main.home-profile {
+.masthead__inner-wrap,
+#main:has(> .sidebar) {
   max-width: 54rem;
   margin-inline: auto;
 }
 
 @media screen and (min-width: $sidebar-screen-min-width) {
-  #main.home-profile {
+  .greedy-nav .visible-links {
+    margin-inline: auto;
+  }
+
+  #main:has(> .sidebar) {
     display: flex;
     align-items: flex-start;
     gap: 3rem;
   }
 
-  #main.home-profile::before,
-  #main.home-profile::after {
+  #main:has(> .sidebar)::before,
+  #main:has(> .sidebar)::after {
     display: none;
   }
 
-  .home-profile > .sidebar {
+  #main > .sidebar {
     position: static;
     flex: 0 0 13rem;
     padding: 0;
@@ -66,7 +71,7 @@
     overflow: visible;
   }
 
-  .home-profile > .page {
+  #main:has(> .sidebar) > :is(.page, .archive) {
     flex: 1;
     min-width: 0;
     width: auto;
