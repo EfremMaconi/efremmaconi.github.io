@@ -20,10 +20,9 @@
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
 
-  {% if author.email or author.scix %}
+  {% if author.email %}
     <div class="author__content">
       {% if author.email %}<p style="overflow-wrap: anywhere;"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i> {{ author.email | escape }}</p>{% endif %}
-      {% if author.scix %}<p><a href="{{ author.scix | escape }}"><i class="ai ai-ads ai-fw icon-pad-right" aria-hidden="true"></i>SciX</a></p>{% endif %}
     </div>
   {% endif %}
 
@@ -59,6 +58,9 @@
       {% endif %}
       {% if author.orcid %}
         <li><a href="{{ author.orcid }}"><i class="ai ai-orcid ai-fw icon-pad-right"></i>ORCID</a></li>
+      {% endif %}
+      {% if author.scix %}
+        <li><a href="{{ author.scix | escape }}"><i class="ai ai-ads ai-fw icon-pad-right" aria-hidden="true"></i>SciX</a></li>
       {% endif %}
       {% if author.pubmed %}
         <li><a href="{{ author.pubmed }}"><i class="ai ai-pubmed ai-fw icon-pad-right"></i>PubMed</a></li>
