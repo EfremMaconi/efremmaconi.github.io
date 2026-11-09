@@ -222,6 +222,14 @@
 }
 
 @media screen {
+  :root {
+    --reading-panel-width: calc(min(100vw, 54rem) - 0.75rem);
+  }
+
+  .masthead__inner-wrap {
+    background-size: var(--reading-panel-width) 1px;
+  }
+
   body {
     isolation: isolate;
   }
@@ -232,10 +240,9 @@
     inset: 0;
     z-index: -1;
     pointer-events: none;
-    /* Match the 54rem masthead and its 1em inset on either side. */
     background:
-      linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72))
-        center / calc(min(100%, 54rem) - 2em) 100% no-repeat,
+      linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80))
+        center / var(--reading-panel-width) 100% no-repeat,
       url("{{ '/image/background_image.jpg' | relative_url }}") center / cover no-repeat;
   }
 
