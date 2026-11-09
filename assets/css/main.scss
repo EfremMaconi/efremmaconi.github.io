@@ -222,10 +222,6 @@
 }
 
 @media screen {
-  html[data-theme="dark"] {
-    --global-bg-color: #101012;
-  }
-
   body {
     isolation: isolate;
   }
@@ -236,17 +232,23 @@
     inset: 0;
     z-index: -1;
     pointer-events: none;
-    background: url("{{ '/image/background_image.jpg' | relative_url }}") center / cover no-repeat;
-    opacity: 0.65;
-    --photo-fade: linear-gradient(to right, black, transparent 24%, transparent 76%, black);
-    -webkit-mask-image: var(--photo-fade);
-    mask-image: var(--photo-fade);
+    /* Match the 54rem masthead and its 1em inset on either side. */
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72))
+        center / calc(min(100%, 54rem) - 2em) 100% no-repeat,
+      url("{{ '/image/background_image.jpg' | relative_url }}") center / cover no-repeat;
   }
-}
 
-@media screen and (max-width: 767px) {
-  body::before {
-    opacity: 0.22;
-    --photo-fade: linear-gradient(to right, black, transparent 10%, transparent 90%, black);
+  #main {
+    color: #fff;
+    --global-text-color: #fff;
+    --global-text-color-light: #eee;
+    --global-link-color: #ecf3ff;
+    --global-link-color-hover: #fff;
+    --global-link-color-visited: #e6ddfa;
+  }
+
+  @media (max-width: $sidebar-screen-min-width) {
+    #main { padding-inline: 1.75em; }
   }
 }
