@@ -257,13 +257,25 @@
   > h3 {
     font-size: 1.125em;
 
-    a,
-    a:hover {
+    a {
+      color: var(--publication-title-color, #805725);
       text-decoration: none;
+
+      &:visited { color: var(--publication-title-color, #805725); }
+
+      &:hover,
+      &:focus-visible {
+        color: var(--global-masthead-link-color-hover);
+        text-decoration: none;
+      }
     }
   }
 
   + .publication-entry {
     margin-top: 1.5rem;
   }
+}
+
+html[data-theme="dark"] .publication-entry {
+  --publication-title-color: #e3c49f;
 }
