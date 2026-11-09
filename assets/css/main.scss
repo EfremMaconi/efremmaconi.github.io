@@ -110,7 +110,8 @@
 
     div.author__avatar {
       display: block;
-      width: clamp(140px, 41vw, 175px);
+      width: clamp(200px, 62vw, 280px);
+      max-width: 100%;
       margin: 0 auto 0.75rem;
     }
 
