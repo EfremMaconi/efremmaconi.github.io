@@ -245,10 +245,12 @@
     margin-top: auto;
     padding-top: 3em;
     background: transparent;
-    color: #eee;
+    color: var(--global-text-color);
   }
 
-  body::before {
+  html[data-theme="dark"] .page__footer { color: #eee; }
+
+  html[data-theme="dark"] body::before {
     content: "";
     position: fixed;
     inset: 0;
@@ -261,7 +263,7 @@
       url("{{ '/image/background_2.jpg' | relative_url }}") center / cover no-repeat;
   }
 
-  #main {
+  html[data-theme="dark"] #main {
     color: #fff;
     --global-text-color: #fff;
     --global-text-color-light: #eee;
