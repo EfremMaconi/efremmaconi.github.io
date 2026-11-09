@@ -1,5 +1,5 @@
 ---
-title: "The late Miocene ¹⁰Be anomaly and the possibility of a supernova"
+title: "The late Miocene Beryllium-10 anomaly and the possibility of a supernova"
 collection: publications
 category: manuscripts
 authors: "E. Maconi, J. Alves, J. Großschedl, A. Rottensteiner, C. Swiggum, and S. Ratzenböck"
