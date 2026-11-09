@@ -1,5 +1,7 @@
 ---
 title: "Modeling Local Bubble analogs II: Synthetic Faraday rotation maps"
+authors: "E. Maconi, S. Reissl, J. D. Soler, P. Girichidis, R. S. Klessen, A. Bracco, and S. Hutschenreuter"
+excerpt: "We simulate Faraday rotation across the sky to study how a bubble like the Local Bubble affects the polarization of radio waves passing through it."
 collection: publications
 category: manuscripts
 permalink: /publication/2025-synthetic-faraday-rotation-maps
