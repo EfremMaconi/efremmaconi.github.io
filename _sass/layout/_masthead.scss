@@ -84,3 +84,15 @@
 .masthead__menu-item.selected:not(.masthead__menu-item--lg) > a {
   border-bottom: 2px solid var(--global-text-color);
 }
+
+.site-name-label {
+  display: block;
+  padding: 0.5rem 0;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  color: var(--global-masthead-link-color);
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #site-nav:has(.site-name-label) .desktop-about { display: table-cell; }
+}
