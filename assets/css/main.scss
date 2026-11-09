@@ -271,6 +271,16 @@
     color: var(--global-text-color);
   }
 
+  html[data-theme="dark"] .masthead {
+    // Over the 80% reading panel this adds up to 88% black.
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))
+      center / var(--reading-panel-width) 100% no-repeat;
+
+    .greedy-nav, .visible-links > li, .greedy-nav > button {
+      background-color: transparent;
+    }
+  }
+
   html[data-theme="dark"] .page__footer { color: #eee; }
 
   html[data-theme="dark"] body::before {
