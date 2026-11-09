@@ -23,6 +23,19 @@
           </li>
         </ul>
         <ul class="hidden-links hidden"></ul>
+        <details class="phone-navigation">
+          <summary>Menu</summary>
+          <ul>
+            {% unless page.url == '/' or page.url == '/index.html' %}
+              <li><a href="{{ '/' | relative_url }}">Home</a></li>
+            {% endunless %}
+            {% for link in site.data.navigation.main %}
+              {% unless page.url == link.url %}
+                <li><a href="{{ link.url | relative_url }}">{{ link.title }}</a></li>
+              {% endunless %}
+            {% endfor %}
+          </ul>
+        </details>
       </nav>
     </div>
   </div>
