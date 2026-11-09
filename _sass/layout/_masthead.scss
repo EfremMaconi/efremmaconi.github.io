@@ -59,7 +59,8 @@
     font-size: 1.1rem;
   }
 
-  &--lg:not(#theme-toggle) > a {
+  &--lg:not(#theme-toggle) > a,
+  &--lg > .site-name-label {
     font-size: 1.25rem;
   }
 
@@ -89,7 +90,6 @@
   display: block;
   padding: 0.5rem 0;
   margin-right: 1rem;
-  font-size: 1.25rem;
   color: var(--global-masthead-link-color);
 }
 

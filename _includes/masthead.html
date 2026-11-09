@@ -6,7 +6,7 @@
         <button aria-label="Navigation menu" aria-controls="navigation-links" aria-expanded="false"><span class="navicon"></span></button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg persist {% if page.url == '/' or page.url == '/index.html' %}selected{% endif %}">
-            {% if page.url == '/research/' or page.url == '/publications/' %}
+            {% if page.url == '/' or page.url == '/index.html' or page.url == '/research/' or page.url == '/publications/' %}
               <span class="site-name-label">{{ site.title }}</span>
             {% else %}
               <a href="{{ base_path }}/">{{ site.title }}</a>
