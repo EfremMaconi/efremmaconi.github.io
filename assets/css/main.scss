@@ -232,6 +232,20 @@
 
   body {
     isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-bottom: 0;
+  }
+
+  #main { width: 100%; }
+
+  .page__footer {
+    position: relative;
+    margin-top: auto;
+    padding-top: 3em;
+    background: transparent;
+    color: #eee;
   }
 
   body::before {
@@ -241,9 +255,10 @@
     z-index: -1;
     pointer-events: none;
     background:
-      linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80))
+      linear-gradient(to right, transparent, rgba(0, 0, 0, 0.8) 18px,
+        rgba(0, 0, 0, 0.8) calc(100% - 18px), transparent)
         center / var(--reading-panel-width) 100% no-repeat,
-      url("{{ '/image/background_image.jpg' | relative_url }}") center / cover no-repeat;
+      url("{{ '/image/background_2.jpg' | relative_url }}") center / cover no-repeat;
   }
 
   #main {
