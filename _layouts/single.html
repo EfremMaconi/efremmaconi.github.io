@@ -44,7 +44,7 @@ layout: default
         </header>
       {% endunless %}
 
-      <section class="page__content" itemprop="text">
+      <section class="page__content{% if page.url == '/outreach-writing/' %} outreach-writing{% endif %}" itemprop="text">
         {{ content }}
 
         {% include /components/citations.html
