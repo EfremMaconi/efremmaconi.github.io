@@ -10,39 +10,27 @@ I enjoy talking with people. And I enjoy talking with people about astronomy, th
 
 If you’d like to organize an event together, [contact me](mailto:efrem.maconi@univie.ac.at)!
 
-<details>
+<details class="selected-talks">
   <summary><strong>Selected talks &amp; events</strong></summary>
-
   <h3>2026</h3>
   <ul>
-    <li><strong>Lange Nacht der Forschung (Long Night of Research)</strong> · Vienna, Austria<br>
-      I organized the stand “The climate crisis: debunking the myths.”</li>
-    <li><strong><a href="https://astro.univie.ac.at/fileadmin/user_upload/p_sternwartennaechte/2026/Flyer_Mar26.pdf">Nachts auf der Sternwarte (Nights at the Observatory)</a></strong> · University of Vienna, Austria<br>
-      An observatory event open to the public.</li>
+    <li><strong>The climate crisis: debunking the myths</strong><em>Lange Nacht der Forschung, Vienna, Austria</em><span>I organized the climate crisis stand.</span></li>
+    <li><strong>The Galactic Journey of the Solar System</strong><em>Nachts auf der Sternwarte, University of Vienna, Austria</em></li>
   </ul>
-
   <h3>2025</h3>
   <ul>
-    <li><strong>The climate crisis from an astronomical perspective</strong> · Middle school, Italy<br>
-      A presentation on astronomy and climate for middle school students.</li>
-    <li><strong>Astronomy for climate change</strong> · Lange Nacht der Sternwarte, University of Vienna, Austria<br>
-      I prepared the interactive presentation for the public and helped organize the event.</li>
+    <li><strong>The climate crisis from an astronomical perspective</strong><em>Middle school, Italy</em></li>
+    <li><strong>Astronomy for climate change</strong><em>Lange Nacht der Sternwarte, University of Vienna, Austria</em><span>I prepared the interactive presentation and helped organize the event.</span></li>
   </ul>
-
   <h3>2024</h3>
   <ul>
-    <li><strong>Climate Fresk workshop</strong> · University of Vienna, Austria<br>
-      University employees explored the climate crisis through an interactive game.</li>
-    <li><strong>Climate Fresk workshop</strong> · High school, Italy<br>
-      High school students explored the climate crisis through an interactive game.</li>
-    <li><strong>The climate crisis: raising awareness among younger generations</strong> · Middle school, Italy<br>
-      A presentation for middle school students.</li>
+    <li><strong>Climate Fresk workshop</strong><em>University of Vienna, Austria</em><span>A workshop for university employees.</span></li>
+    <li><strong>Climate Fresk workshop</strong><em>High school, Italy</em></li>
+    <li><strong>The climate crisis: raising awareness among younger generations</strong><em>Middle school, Italy</em></li>
   </ul>
-
   <h3>2023</h3>
   <ul>
-    <li><strong>The life cycle of stars</strong> · Middle school, Italy<br>
-      An astronomy presentation for middle school students.</li>
+    <li><strong>The life cycle of stars</strong><em>Middle school, Italy</em></li>
   </ul>
 </details>
 
