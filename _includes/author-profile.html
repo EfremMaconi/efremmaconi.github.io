@@ -26,7 +26,7 @@
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
       {% if author.email %}
-        <li style="overflow-wrap: anywhere; white-space: normal;"><a href="mailto:{{ author.email | escape }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i> {{ author.email | escape }}</a></li>
+        <li style="overflow-wrap: anywhere; white-space: normal;"><a href="mailto:{{ author.email | escape }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ author.email | strip | escape }}</a></li>
       {% endif %}
       <!-- Font Awesome icons / Biographic information  -->
       {% if author.location %}
