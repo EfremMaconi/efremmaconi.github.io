@@ -7,5 +7,7 @@ date: 2025-02-11
 venue: "Astronomy & Astrophysics"
 link: "https://doi.org/10.1051/0004-6361/202452061"
 paperurl: "https://doi.org/10.1051/0004-6361/202452061"
+press_url: "https://www.univie.ac.at/en/news/detail/the-galactic-journey-of-our-solar-system"
+press_label: "University of Vienna press release"
 excerpt: "We trace the past orbits of the Sun and nearby star clusters to reconstruct when the Solar System crossed the Radcliffe wave."
 ---
