@@ -14,7 +14,7 @@ layout: default
   {% endunless %}
 {% endif %}
 
-<div id="main"{% if page.url == "/" %} class="home-profile"{% elsif page.url == "/research/" %} class="centered-article"{% endif %} role="main">
+<div id="main"{% if page.url == "/" %} class="home-profile"{% elsif page.url == "/research/" or page.url == "/outreach-writing/" %} class="centered-article"{% endif %} role="main">
   {% include sidebar.html %}
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
