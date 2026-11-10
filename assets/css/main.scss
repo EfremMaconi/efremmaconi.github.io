@@ -155,7 +155,11 @@
   }
 }
 
+#site-nav .phone-home-link { display: none; }
+
 @media (max-width: 767px) {
+  #site-nav .site-name-label { display: none; }
+  #site-nav .phone-home-link { display: block; }
   #site-nav .visible-links { margin: 0; }
 }
 
