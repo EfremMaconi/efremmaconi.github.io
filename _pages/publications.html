@@ -21,7 +21,7 @@ author_profile: true
     {% assign journal_url = paper.link | default: paper.paperurl %}
     <article class="publication-entry">
       <h3><a href="{{ journal_url | escape }}">{{ paper.title | escape }}</a></h3>
-      <p><small><em>{{ paper.authors | split: ', ' | first | escape }} et al. ({{ paper.date | date: '%Y' }}), {{ paper.venue | replace: 'Astronomy & Astrophysics', 'A&A' | replace: 'Monthly Notices of the Royal Astronomical Society', 'MNRAS' | escape }}</em></small></p>
+      <p><small><em>{{ paper.authors | split: ', ' | first | escape }} et al. ({{ paper.date | date: '%Y' }}), {{ paper.venue | replace: 'Astronomy & Astrophysics', 'A&A' | replace: 'Monthly Notices of the Royal Astronomical Society', 'MNRAS' | escape }}{% if paper.press_url %}, mentioned in the <a href="{{ paper.press_url | escape }}">{{ paper.press_label | escape }}</a>{% endif %}</em></small></p>
       <p>{{ paper.excerpt | strip_html | strip | escape }}</p>
     </article>
   {% endfor %}
