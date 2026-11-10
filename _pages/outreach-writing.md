@@ -47,3 +47,9 @@ If you’d like to organize an event together, [contact me](mailto:efrem.maconi@
 </details>
 
 ## Writing
+
+### *Se questo è un popolo*
+
+I wrote this collection of poems in solidarity with the Palestinian people. It was published by La Memoria del Mondo. All profits from the book are donated to [Fondazione Soleterre](https://soleterre.org/), which provides medical care and psychological support in Palestine.
+
+[Buy the book from La Memoria del Mondo](https://www.lamemoriadelmondo.it/scheda.php?isbn=9791282297066).
