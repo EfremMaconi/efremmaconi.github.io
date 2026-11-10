@@ -14,23 +14,23 @@ If you’d like to organize an event together, [contact me](mailto:efrem.maconi@
   <summary><strong>Selected talks &amp; events</strong></summary>
   <h3>2026</h3>
   <ul>
-    <li><strong>Debunking the myths of climate change denialism</strong> · <em>Lange Nacht der Forschung, Vienna</em><span>Event · I organized the climate crisis stand.</span></li>
-    <li><strong>The Galactic Journey of the Solar System</strong> · <em>Nachts auf der Sternwarte, University of Vienna</em><span>Talk</span></li>
+    <li><strong>Debunking the myths of climate change denialism</strong> · Event<span><em>Lange Nacht der Forschung, Vienna</em></span></li>
+    <li><strong>The Galactic Journey of the Solar System</strong> · Talk<span><em>Nachts auf der Sternwarte, University of Vienna</em></span></li>
   </ul>
   <h3>2025</h3>
   <ul>
-    <li><strong>The climate crisis from an astronomical perspective</strong> · <em>Middle school, Italy</em><span>Talk</span></li>
+    <li><strong>The climate crisis from an astronomical perspective</strong> · Talk<span><em>Middle school, Italy</em></span></li>
   </ul>
   <h3>2024</h3>
   <ul>
-    <li><strong>Astronomy for climate change</strong> · <em>Lange Nacht der Sternwarte, University of Vienna</em><span>Event · I prepared the presentation and helped organize the evening.</span></li>
-    <li><strong>Climate Fresk</strong> · <em>University of Vienna, Austria</em><span>Workshop · I facilitated the game for university staff.</span></li>
-    <li><strong>Climate Fresk</strong> · <em>High school, Italy</em><span>Workshop · I facilitated the game for students.</span></li>
-    <li><strong>The climate crisis: raising awareness among younger generations</strong> · <em>Middle school, Italy</em><span>Talk</span></li>
+    <li><strong>Astronomy for climate change</strong> · Event<span><em>Lange Nacht der Sternwarte, University of Vienna</em></span></li>
+    <li><strong>Climate Fresk</strong> · Workshop<span><em>University of Vienna, Austria</em></span></li>
+    <li><strong>Climate Fresk</strong> · Workshop<span><em>High school, Italy</em></span></li>
+    <li><strong>The climate crisis: raising awareness among younger generations</strong> · Talk<span><em>Middle school, Italy</em></span></li>
   </ul>
   <h3>2023</h3>
   <ul>
-    <li><strong>The life cycle of stars</strong> · <em>Middle school, Italy</em><span>Talk</span></li>
+    <li><strong>The life cycle of stars</strong> · Talk<span><em>Middle school, Italy</em></span></li>
   </ul>
 </details>
 
