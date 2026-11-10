@@ -312,3 +312,12 @@
     #main { padding-inline: 1.75em; }
   }
 }
+
+@media (min-width: 768px) {
+  #site-nav .visible-links {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
