@@ -23,7 +23,7 @@ If you’d like to organize an event together, [contact me](mailto:efrem.maconi@
   </ul>
   <h3>2024</h3>
   <ul>
-    <li><strong>Astronomy for climate change</strong> · Event<span><em>Lange Nacht der Sternwarte, University of Vienna</em></span></li>
+    <li><strong>Astronomy for climate change</strong> · Event<span><em>Lange Nacht der Sternwarte, University of Vienna, Austria</em></span></li>
     <li><strong>Climate Fresk</strong> · Workshop<span><em>University of Vienna, Austria</em></span></li>
     <li><strong>Climate Fresk</strong> · Workshop<span><em>High school, Italy</em></span></li>
     <li><strong>The climate crisis: raising awareness among younger generations</strong> · Talk<span><em>Middle school, Italy</em></span></li>
