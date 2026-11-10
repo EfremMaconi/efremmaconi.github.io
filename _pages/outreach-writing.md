@@ -14,8 +14,8 @@ If you’d like to organize an event together, [contact me](mailto:efrem.maconi@
   <summary><strong>Selected talks &amp; events</strong></summary>
   <h3>2026</h3>
   <ul>
-    <li><strong>Debunking the myths of climate change denialism</strong> · Event<span><em>Lange Nacht der Forschung, Vienna</em></span></li>
-    <li><strong>The Galactic Journey of the Solar System</strong> · Talk<span><em>Nachts auf der Sternwarte, University of Vienna</em></span></li>
+    <li><strong>Debunking the myths of climate change denialism</strong> · Event<span><em>Lange Nacht der Forschung, University of Vienna, Austria</em></span></li>
+    <li><strong>The Galactic Journey of the Solar System</strong> · Talk<span><em>Nachts auf der Sternwarte, University of Vienna, Austria</em></span></li>
   </ul>
   <h3>2025</h3>
   <ul>
