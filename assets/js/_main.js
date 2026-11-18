@@ -37,7 +37,8 @@ function setTheme(theme) {
     $("html").removeAttr("data-theme");
 
   }
-  $(".theme-switch").attr("aria-checked", String(use_theme === "dark"));
+  const themeAction = use_theme === "dark" ? "Switch to light mode" : "Switch to dark mode";
+  $(".theme-switch").attr("aria-label", themeAction).attr("title", themeAction);
 }
 
 // Toggle the theme manually
