@@ -440,3 +440,23 @@ html[data-theme="dark"] #site-nav .theme-switch {
   #site-nav .theme-switch { margin-left: 8px; }
 }
 
+
+/* Center the phone menu control on the same row as the name and theme button. */
+@media (max-width: 767px) {
+  #site-nav > button {
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    line-height: 1;
+  }
+
+  #site-nav > button .navicon {
+    display: block;
+    margin: 0;
+  }
+}
