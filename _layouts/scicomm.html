@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<main id="main" class="scicomm-article">
+  <a class="scicomm-back" href="{{ '/outreach-writing/' | relative_url }}">← Outreach &amp; Writing</a>
+  <article>
+    <header class="scicomm-hero">
+      <div>
+        <h1>{{ page.title | escape }}</h1>
+        <p class="scicomm-subtitle">{{ page.subtitle | escape }}</p>
+      </div>
+      {% if page.cover %}
+      <figure>
+        <img src="{{ page.cover | relative_url }}" alt="{{ page.cover_alt | escape }}" fetchpriority="high">
+      </figure>
+      {% endif %}
+    </header>
+    <div class="scicomm-content">
+      {{ content }}
+    </div>
+  </article>
+</main>

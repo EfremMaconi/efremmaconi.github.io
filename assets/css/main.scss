@@ -460,3 +460,86 @@ html[data-theme="dark"] #site-nav .theme-switch {
     margin: 0;
   }
 }
+
+
+/* Science communication articles: quiet blue canvas, without the site photo. */
+body.scicomm-page {
+  background: #edf1f5;
+}
+
+html[data-theme="dark"] body.scicomm-page {
+  background: #162536;
+
+  &::before { display: none; }
+
+  .masthead, .greedy-nav, .visible-links > li, .greedy-nav > button {
+    background: #162536;
+  }
+
+  #main {
+    --global-text-color: #e9eef3;
+    color: #e9eef3;
+  }
+}
+
+#main.scicomm-article {
+  float: none;
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.scicomm-back {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.scicomm-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 2rem;
+
+  h1 {
+    margin: 0 0 1rem;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    line-height: 1.15;
+  }
+
+  .scicomm-subtitle {
+    margin: 0;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  figure { display: block; margin: 0; }
+  img { display: block; width: 100%; height: auto; }
+}
+
+.scicomm-content {
+  max-width: 40rem;
+  margin: 2.5rem auto 0;
+  line-height: 1.7;
+
+  img { max-width: 100%; height: auto; }
+  figure { margin: 2rem 0; }
+  figcaption { font-size: 0.85em; line-height: 1.5; }
+}
+
+.scicomm-page .scicomm-back,
+.scicomm-content a {
+  color: #805725;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+html[data-theme="dark"] .scicomm-page {
+  .scicomm-back, .scicomm-content a { color: #e3c49f; }
+}
+
+@media (max-width: 767px) {
+  .scicomm-hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+}
