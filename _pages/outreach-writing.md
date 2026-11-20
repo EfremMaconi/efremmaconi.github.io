@@ -10,6 +10,11 @@ I enjoy talking with people. And I enjoy talking with people about astronomy, th
 
 If you’d like to organize an event together, [contact me](mailto:efrem.maconi@univie.ac.at)!
 
+### Articles
+
+[**A King's Death, the Shape of Earth, and the Temperature of the Moon**]({{ '/SciComm/01-lunar_eclipse/' | relative_url }})  
+*Three stories connected by a lunar eclipse.*
+
 <details class="selected-talks">
   <summary><strong>Selected talks &amp; events</strong></summary>
   <h3>2026</h3>
