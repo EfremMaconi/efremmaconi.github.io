@@ -543,3 +543,27 @@ html[data-theme="dark"] .scicomm-page {
     gap: 1.5rem;
   }
 }
+
+/* Figure captions stay compact until the reader opens them. */
+.scicomm-content .scicomm-figure {
+  display: block;
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-inline: auto;
+  }
+
+  figcaption { margin-top: 0.65rem; }
+  summary {
+    cursor: pointer;
+    padding-block: 0.4rem;
+    font-weight: 700;
+  }
+  summary:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+  }
+  details p { margin: 0.5rem 0 0; }
+}
