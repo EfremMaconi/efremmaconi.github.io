@@ -231,7 +231,7 @@
 
 @media screen {
   :root {
-    --reading-panel-width: min(62rem, calc(100% - 0.5rem));
+    --site-divider-width: min(62rem, calc(100% - 0.5rem));
   }
 
   .masthead__inner-wrap, .page__footer footer { background-image: none; }
@@ -242,7 +242,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: var(--reading-panel-width);
+    width: var(--site-divider-width);
     height: 1px;
     background: var(--global-border-color);
   }
@@ -279,33 +279,9 @@
     color: var(--global-text-color);
   }
 
-  html[data-theme="dark"] .masthead {
-    // Over the 80% reading panel this adds up to 88% black.
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))
-      center / var(--reading-panel-width) 100% no-repeat;
-
-    .greedy-nav, .visible-links > li, .greedy-nav > button {
-      background-color: transparent;
-    }
-  }
-
-  html[data-theme="dark"] .page__footer { color: #eee; }
-
-  html[data-theme="dark"] body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-    pointer-events: none;
-    background:
-      linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8))
-        center / var(--reading-panel-width) 100% no-repeat,
-      url("{{ '/image/background_2.jpg' | relative_url }}") center / cover no-repeat;
-  }
-
   html[data-theme="dark"] #main {
-    color: #fff;
-    --global-text-color: #fff;
+    color: #e9eef3;
+    --global-text-color: #e9eef3;
     --global-text-color-light: #eee;
     --global-link-color: #ecf3ff;
     --global-link-color-hover: #fff;
@@ -462,24 +438,21 @@ html[data-theme="dark"] #site-nav .theme-switch {
 }
 
 
-/* Science communication articles: quiet blue canvas, without the site photo. */
-body.scicomm-page {
-  background: #edf1f5;
+/* A consistent, quiet canvas across the entire site. */
+:root {
+  --global-bg-color: #edf1f5;
 }
 
-html[data-theme="dark"] body.scicomm-page {
-  background: #162536;
+html[data-theme="dark"] {
+  --global-bg-color: #162536;
+}
 
-  &::before { display: none; }
-
-  .masthead, .greedy-nav, .visible-links > li, .greedy-nav > button {
-    background: #162536;
-  }
-
-  #main {
-    --global-text-color: #e9eef3;
-    color: #e9eef3;
-  }
+body,
+.masthead,
+.greedy-nav,
+.masthead__menu-item,
+.greedy-nav > button {
+  background: var(--global-bg-color);
 }
 
 #main.scicomm-article {
