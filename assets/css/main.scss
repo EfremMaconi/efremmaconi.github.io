@@ -573,3 +573,55 @@ html[data-theme="dark"] .scicomm-page {
     max-width: 60%;
   }
 }
+
+
+.scicomm-article img[role="button"] {
+  cursor: zoom-in;
+}
+.scicomm-article img[role="button"]:focus-visible {
+  outline: 3px solid var(--global-masthead-link-color-hover);
+  outline-offset: 4px;
+}
+.article-lightbox {
+  position: fixed;
+  inset: 0;
+  box-sizing: border-box;
+  width: 96vw;
+  height: 94vh;
+  height: 94dvh;
+  max-width: none;
+  max-height: none;
+  margin: auto;
+  padding: 52px 12px 12px;
+  border: 0;
+  background: transparent;
+  overflow: hidden;
+}
+.article-lightbox::backdrop {
+  background: rgba(0, 0, 0, 0.9);
+}
+.article-lightbox__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.article-lightbox__close {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  background: #162536;
+  color: #fff;
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+}
+.article-lightbox__close:focus-visible {
+  outline: 3px solid #e3c49f;
+  outline-offset: 3px;
+}

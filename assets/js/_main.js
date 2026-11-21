@@ -185,3 +185,65 @@ $(document).ready(function () {
   });
 
 });
+
+// Enlarge article images without changing their inline size or captions.
+(function () {
+  const dialog = document.querySelector(".article-lightbox");
+  if (!dialog || typeof dialog.showModal !== "function") return;
+  const preview = dialog.querySelector(".article-lightbox__image");
+  const closeButton = dialog.querySelector(".article-lightbox__close");
+  let opener = null;
+  let scrollRegion = null;
+  let previousOverflow = "";
+
+  function openImage(img) {
+    opener = img;
+    preview.src = img.currentSrc || img.src;
+    preview.alt = img.alt;
+    scrollRegion = document.querySelector(".site-content-scroll");
+    if (scrollRegion) {
+      previousOverflow = scrollRegion.style.overflowY;
+      scrollRegion.style.overflowY = "hidden";
+    }
+    dialog.showModal();
+    closeButton.focus();
+  }
+
+  document.querySelectorAll(".scicomm-article img").forEach(function (img) {
+    // Keep any explicitly linked images working as links.
+    if (img.closest("a, button")) return;
+    img.setAttribute("role", "button");
+    img.setAttribute("tabindex", "0");
+    img.setAttribute("aria-haspopup", "dialog");
+    img.setAttribute("aria-label", "Enlarge image: " + (img.alt || "article figure"));
+    img.addEventListener("click", function () { openImage(img); });
+    img.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        openImage(img);
+      }
+    });
+  });
+
+  closeButton.addEventListener("click", function () { dialog.close(); });
+  dialog.addEventListener("click", function (event) {
+    if (event.target === dialog) dialog.close();
+    if (event.target === preview && preview.naturalWidth && preview.naturalHeight) {
+      // The image uses contain: clicks on its empty letterboxed area are outside.
+      const rect = preview.getBoundingClientRect();
+      const scale = Math.min(rect.width / preview.naturalWidth, rect.height / preview.naturalHeight);
+      const width = preview.naturalWidth * scale;
+      const height = preview.naturalHeight * scale;
+      const left = rect.left + (rect.width - width) / 2;
+      const top = rect.top + (rect.height - height) / 2;
+      if (event.clientX < left || event.clientX > left + width ||
+          event.clientY < top || event.clientY > top + height) dialog.close();
+    }
+  });
+  // Native modal dialogs provide Escape dismissal and keyboard focus containment.
+  dialog.addEventListener("close", function () {
+    if (scrollRegion) scrollRegion.style.overflowY = previousOverflow;
+    preview.removeAttribute("src");
+    if (opener) opener.focus();
+  });
+})();
