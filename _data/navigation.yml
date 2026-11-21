@@ -12,11 +12,8 @@ main:
   - title: "Research"
     url: /research/
     
-  - title: "Outreach"
-    url: /outreach/
-
-  - title: "Writing"
-    url: /writing/
+  - title: "Outreach & Writing"
+    url: /outreach-writing/
 
  # - title: "Talks"
  #   url: /talks/    
