@@ -40,6 +40,8 @@ Although this explanation had been known for centuries, it did not convince ever
 
 But what is the actual temperature of the Moon? Thanks to modern observations, we now know that it varies a lot, reaching extremes far beyond those experienced on Earth. One of the reason is that one day on the Moon lasts roughly 29.5 Earth days, meaning that a given part of its surface can be exposed to sunlight for almost two weeks. In addition, the Moon has no atmosphere to redistribute heat or help retain it once the surface is no longer illuminated by the Sun. For these reasons, daytime temperatures can reach 125°C (about 400 K), while nighttime temperatures can be as low as −173°C (100 K). In some permanently shadowed regions near the lunar poles, temperatures can even drop below −233°C (40 K).
 
+Interestingly, lunar eclipses also cause rapid changes in the temperature of the lunar Moon surface. These occur over a timescale of just a few hours, much shorter than the lunar day. By analyzing these temperature variations, scientists can better understand the physical properties of the material that makes up the surface.
+
 <figure class="scicomm-figure">
   <img src="{{ '/SciComm/01-lunar_eclipse/03-lunarTemp.png' | relative_url }}" alt="Lunar surface temperatures" loading="lazy">
   <figcaption>
@@ -49,8 +51,6 @@ But what is the actual temperature of the Moon? Thanks to modern observations, w
     </details>
   </figcaption>
 </figure>
-
-Interestingly, lunar eclipses also cause rapid changes in the temperature of the lunar Moon surface. These occur over a timescale of just a few hours, much shorter than the lunar day. By analyzing these temperature variations, scientists can better understand the physical properties of the material that makes up the surface.
 
 It is with last piece of information that this story finishes, with the hope that now, whenever you will look to a lunar eclipse, you will be aware how this celestial event has frightened, fascinated, and inspired people over time. This connects us to all those who watched the same spectacle long before us.
 
