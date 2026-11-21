@@ -55,6 +55,6 @@ If you’d like to organize an event together, [contact me](mailto:efrem.maconi@
   </a>
   <div class="writing-article__text">
     <h3><a href="https://www.lamemoriadelmondo.it/scheda.php?isbn=9791282297066"><em>Se questo è un popolo</em></a></h3>
-    <p>I wrote this collection of poems in solidarity with the Palestinian people. It was published by La Memoria del Mondo. All profits from the book are donated to <a href="https://soleterre.org/">Fondazione Soleterre</a>, which provides medical care and psychological support in Palestine.</p>
+    <p>A collection of poems in solidarity with the Palestinian people. It was published by La Memoria del Mondo. All profits from the book are donated to <a href="https://soleterre.org/">Fondazione Soleterre</a>, which provides medical care and psychological support in Palestine.</p>
   </div>
 </div>
