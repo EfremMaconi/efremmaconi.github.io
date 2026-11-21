@@ -16,6 +16,8 @@ var phoneMode = false;
 var $pageLinks = $vlinks.children(':not(.persist)');
 
 function updateNav() {
+  // Article pages intentionally omit the masthead and its menu template.
+  if (!$nav.length) return;
   var phone = window.matchMedia('(max-width: 767px)').matches;
   if (phone !== phoneMode) {
     $pageLinks.detach();
