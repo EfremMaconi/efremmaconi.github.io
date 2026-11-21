@@ -615,7 +615,7 @@ html[data-theme="dark"] .scicomm-page {
   }
 }
 
-/* Article listings: full cover beside the title, including on small screens. */
+/* Article and book listings: cover on the left and compact text on the right. */
 .writing-article {
   display: flex;
   align-items: center;
@@ -649,4 +649,13 @@ html[data-theme="dark"] .scicomm-page {
 }
 html[data-theme="dark"] .scicomm-content .article-references {
   color: #a5adb8;
+}
+
+.writing-article__text {
+  flex: 1;
+  min-width: 0;
+}
+#main.centered-article .page__content .writing-article {
+  h3 { margin: 0; line-height: 1.4; }
+  p { line-height: 1.4; }
 }

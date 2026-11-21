@@ -37,20 +37,24 @@ If you’d like to organize an event together, [contact me](mailto:efrem.maconi@
 {% assign science_articles = site.pages | where: 'layout', 'scicomm' | sort: 'path' | reverse %}
 {% for article in science_articles %}
 <div class="writing-article">
-  <p><a href="{{ article.url | relative_url }}"><strong>{{ article.title | escape }}</strong></a><br>
-  <em>{{ article.subtitle | escape }}</em></p>
   {% if article.cover %}
   <a class="writing-article__cover" href="{{ article.url | relative_url }}" aria-label="{{ article.title | escape }}">
     <img src="{{ article.cover | relative_url }}" alt="{{ article.cover_alt | escape }}" loading="lazy">
   </a>
   {% endif %}
+  <p><a href="{{ article.url | relative_url }}"><strong>{{ article.title | escape }}</strong></a><br>
+  <em>{{ article.subtitle | escape }}</em></p>
 </div>
 {% endfor %}
 
 <h2 id="books">Books</h2>
 
-### *Se questo è un popolo*
-
-I wrote this collection of poems in solidarity with the Palestinian people. It was published by La Memoria del Mondo. All profits from the book are donated to [Fondazione Soleterre](https://soleterre.org/), which provides medical care and psychological support in Palestine.
-
-The book can be found [here](https://www.lamemoriadelmondo.it/scheda.php?isbn=9791282297066).
+<div class="writing-article writing-book">
+  <a class="writing-article__cover" href="https://www.lamemoriadelmondo.it/scheda.php?isbn=9791282297066" aria-label="Se questo è un popolo">
+    <img src="{{ '/image/copertina-SeQuestoPopolo.png' | relative_url }}" alt="Copertina di Se questo è un popolo" loading="lazy">
+  </a>
+  <div class="writing-article__text">
+    <h3><a href="https://www.lamemoriadelmondo.it/scheda.php?isbn=9791282297066"><em>Se questo è un popolo</em></a></h3>
+    <p>I wrote this collection of poems in solidarity with the Palestinian people. It was published by La Memoria del Mondo. All profits from the book are donated to <a href="https://soleterre.org/">Fondazione Soleterre</a>, which provides medical care and psychological support in Palestine.</p>
+  </div>
+</div>
