@@ -14,7 +14,7 @@ layout: default
   {% endunless %}
 {% endif %}
 
-<div id="main"{% if page.url == "/" %} class="home-profile"{% elsif page.url == "/research/" or page.url == "/outreach/" or page.url == "/writing/" %} class="centered-article"{% endif %} role="main">
+<div id="main"{% if page.url == "/" %} class="home-profile"{% elsif page.url == "/research/" or page.url == "/outreach-writing/" %} class="centered-article"{% endif %} role="main">
   {% include sidebar.html %}
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
@@ -44,7 +44,7 @@ layout: default
         </header>
       {% endunless %}
 
-      <section class="page__content{% if page.url == '/outreach/' or page.url == '/writing/' %} outreach-writing{% endif %}" itemprop="text">
+      <section class="page__content{% if page.url == '/outreach-writing/' %} outreach-writing{% endif %}" itemprop="text">
         {{ content }}
 
         {% include /components/citations.html
