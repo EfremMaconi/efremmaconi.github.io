@@ -598,3 +598,19 @@ html[data-theme="dark"] .scicomm-page {
   outline: 3px solid #e3c49f;
   outline-offset: 3px;
 }
+
+/* Keep the header in the viewport layout so it cannot cover the reading area. */
+@media screen {
+  body { padding-top: 0; }
+
+  .masthead {
+    position: relative;
+    top: auto;
+    flex: 0 0 auto;
+  }
+
+  .site-content-scroll {
+    padding-top: 1rem;
+    scroll-padding-top: 1rem;
+  }
+}
