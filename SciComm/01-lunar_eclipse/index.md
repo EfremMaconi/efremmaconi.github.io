@@ -1,6 +1,6 @@
 ---
 layout: scicomm
-title: "A King's Death, the Shape of Earth, and the Temperature of the Moon"
+title: "A King's death, the shape of Earth, and the temperature of the Moon"
 subtitle: "Three stories connected by a lunar eclipse."
 author_profile: false
 permalink: /SciComm/01-lunar_eclipse/
@@ -25,7 +25,7 @@ And in the face of this omen, which no apotropaic ritual could counteract, the A
   <figcaption>
     <details>
       <summary><strong>Figure 1 — Letter to the King. </strong></summary>
-      <p>This clay tablets is the letter sent by the Chief Exorcist to the king Esarhaddon. Within it, it says: “I am also worried about the impending observation of the moon; let this be my advice. If it is suitable, let us put somebody on the throne. When the night of the 15th day comes, he will be afflicted by it; but he will save your life.” 
+      <p>This clay tablet is the letter sent by the Chief Exorcist to the king Esarhaddon. Within it, it says: “I am also worried about the impending observation of the moon; let this be my advice. If it is suitable, let us put somebody on the throne. When the night of the 15th day comes, he will be afflicted by it; but he will save your life.” 
 <em>Translation from:</em> Ref. 1. <em>Photo credits:</em> British Museum, K 00602; ABL 0023. SAA 10 240. </p>
     </details>
   </figcaption>
