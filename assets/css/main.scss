@@ -567,3 +567,9 @@ html[data-theme="dark"] .scicomm-page {
   }
   details p { margin: 0.5rem 0 0; }
 }
+
+@media (min-width: 768px) {
+  .scicomm-content .scicomm-figure--clay-tablet img {
+    max-width: 75%;
+  }
+}

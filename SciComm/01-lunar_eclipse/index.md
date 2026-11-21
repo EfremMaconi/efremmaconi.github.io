@@ -20,7 +20,7 @@ In the case of bad omens, a series of apotropaic, protective rituals were perfor
 
 And in the face of this omen, which no apotropaic ritual could counteract, the Assyrian king resorted to the *šar pūḫi*: the **ritual of the substitute king**. The king of the empire was removed from his position through a series of rituals that separated him from his royal identity. He was then sent away from the royal palace under a false identity, known as “the farmer”. A new king, chosen from among prisoners, ordinary citizens, magnates, or political enemies, was then enthroned and, with a series of rituals, metaphysically assumed the identity of the real king. After pretending to rule for 100 days, the substitute king was ritually killed or “helped” to die: the prophecy “The king will die” was fulfilled. “The farmer” could then reclaim his original royal identity.
 
-<figure class="scicomm-figure">
+<figure class="scicomm-figure scicomm-figure--clay-tablet">
   <img src="{{ '/SciComm/01-lunar_eclipse/02-clayTablet.png' | relative_url }}" alt="Clay tablet" loading="lazy">
   <figcaption>
     <details>
@@ -53,3 +53,5 @@ But what is the actual temperature of the Moon? Thanks to modern observations, w
 Interestingly, lunar eclipses also cause rapid changes in the temperature of the lunar Moon surface. These occur over a timescale of just a few hours, much shorter than the lunar day. By analyzing these temperature variations, scientists can better understand the physical properties of the material that makes up the surface.
 
 It is with last piece of information that this story finishes, with the hope that now, whenever you will look to a lunar eclipse, you will be aware how this celestial event has frightened, fascinated, and inspired people over time. This connects us to all those who watched the same spectacle long before us.
+
+**References**
