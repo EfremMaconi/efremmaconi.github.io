@@ -39,6 +39,11 @@ If you’d like to organize an event together, [contact me](mailto:efrem.maconi@
 <div class="writing-article">
   <p><a href="{{ article.url | relative_url }}"><strong>{{ article.title | escape }}</strong></a><br>
   <em>{{ article.subtitle | escape }}</em></p>
+  {% if article.cover %}
+  <a class="writing-article__cover" href="{{ article.url | relative_url }}" aria-label="{{ article.title | escape }}">
+    <img src="{{ article.cover | relative_url }}" alt="{{ article.cover_alt | escape }}" loading="lazy">
+  </a>
+  {% endif %}
 </div>
 {% endfor %}
 

@@ -614,3 +614,39 @@ html[data-theme="dark"] .scicomm-page {
     scroll-padding-top: 1rem;
   }
 }
+
+/* Article listings: full cover beside the title, including on small screens. */
+.writing-article {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-block: 1.5rem;
+}
+#main.centered-article .page__content .writing-article p {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  text-align: left;
+}
+.writing-article__cover {
+  display: block;
+  flex: 0 0 28%;
+  max-width: 9rem;
+}
+.writing-article__cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 400px) {
+  .writing-article { gap: 0.75rem; }
+}
+.scicomm-content .article-references {
+  margin-top: 2.5rem;
+  font-size: 0.8em;
+  line-height: 1.55;
+  color: #606873;
+}
+html[data-theme="dark"] .scicomm-content .article-references {
+  color: #a5adb8;
+}
