@@ -14,6 +14,7 @@ const browserPref = window.matchMedia && window.matchMedia('(prefers-color-schem
 
 // Determine the computed theme, which can be "dark" or "light".
 function determineComputedTheme() {
+  if (document.documentElement.dataset.themeLocked === "dark") return "dark";
   // Determine the expected state of the theme toggle, which can be "dark", "light", or default "system"
   let themeSetting = localStorage.getItem("theme");
   themeSetting = (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") ? "system" : themeSetting;
@@ -28,7 +29,8 @@ function determineComputedTheme() {
 // Set the theme on page load or when explicitly called. Without an argument the
 // theme is the stored preference or, failing that, the OS/browser preference.
 function setTheme(theme) {
-  const use_theme = theme || determineComputedTheme();
+  const use_theme = document.documentElement.dataset.themeLocked === "dark"
+    ? "dark" : (theme || determineComputedTheme());
 
   if (use_theme === "dark") {
     $("html").attr("data-theme", "dark");
@@ -43,6 +45,7 @@ function setTheme(theme) {
 
 // Toggle the theme manually
 function toggleTheme() {
+  if (document.documentElement.dataset.themeLocked === "dark") return;
   const current_theme = $("html").attr("data-theme");
   const new_theme = current_theme === "dark" ? "light" : "dark";
   localStorage.setItem("theme", new_theme);
