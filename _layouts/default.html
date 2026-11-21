@@ -14,7 +14,9 @@ layout: compress
   <body{% if page.layout == "scicomm" %} class="scicomm-page"{% endif %}>
 
     {% include browser-upgrade.html %}
-    {% include masthead.html %}
+    {% unless page.layout == "scicomm" %}
+      {% include masthead.html %}
+    {% endunless %}
 
     <div class="site-content-scroll" tabindex="0" role="region" aria-label="Page content">
       {{ content }}
